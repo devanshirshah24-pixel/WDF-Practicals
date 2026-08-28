@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-brand">StudentHub</div>
+
+    <button class="hamburger" id="hamburger">   
+        <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Assignment.html">Assignment</a></li>
+        <li><a href="Attendance.html">Attendance</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <a href="Login.html">Login</a>
+        <a href="Sign up.html">Sign Up</a>
+        <button id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">🌙</button>
+    </div>
+</nav>
+
+<h1 align="center">Student Hub Portal</h1>
+
+<input type="text" placeholder="Search">
+
+<hr>
+
+<h2>Welcome to Student Hub Portal</h2>
+
+<p>
+Students can access Courses, Assignments,
+Attendance, Results and more.
+</p>
+
+<h2>Upcoming Events</h2>
+
+<div class="slider">
+    <div class="slide active">
+        <h3>Web Development Workshop</h3>
+        <p>Hands-on session covering HTML, CSS and JavaScript basics.</p>
+    </div>
+    <div class="slide">
+        <h3>Hackathon</h3>
+        <p>24-hour coding challenge — form your team and register now.</p>
+    </div>
+    <div class="slide">
+        <h3>Technical Seminar</h3>
+        <p>Guest lecture on emerging trends in software development.</p>
+    </div>
+
+    <button id="prevSlide" class="slide-btn">&#10094;</button>
+    <button id="nextSlide" class="slide-btn">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+             
