@@ -1,0 +1,57 @@
+
+<html>
+    <head>
+        <title>Result Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+<nav class="navbar">
+    <div class="nav-brand">StudentHub</div>
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Assignment.html">Assignment</a></li>
+        <li><a href="Attendance.html">Attendance</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+    </ul>
+    <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">🌙</button>
+    </div>
+</nav>
+        <h1>Semester Result</h1>
+
+        <table border="4">
+            <tr>
+            <th>Subject</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            </tr>
+            
+            <tr>
+                <td>Web Development Framework</td>
+                <td id="wdf">85</td>
+                <td id="wdfgrade"></td>
+            </tr>
+
+            <tr>
+                <td>Programming with C++</td>
+                <td id="cpp">75</td>
+                <td id="cppgrade"></td>
+            </tr>
+
+              <tr>
+                <td>Fundamental Of DSA</td>
+                <td id="dsa">95</td>
+                <td id="dsagrade"></td>
+              </tr>
+              
+        </table>
+        <script src="script.js"></script>
+    </body> 
+</html>

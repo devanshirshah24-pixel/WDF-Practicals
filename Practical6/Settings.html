@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Settings & Student Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-brand">StudentHub</div>
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Assignment.html">Assignment</a></li>
+        <li><a href="Attendance.html">Attendance</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+    </ul>
+    <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">🌙</button>
+    </div>
+</nav>
+
+<h1>StudentHub</h1>
+
+<!-- Settings / Directory Switch -->
+<div class="page-switch">
+    <button id="settingsBtn" class="switch-btn active">
+         Settings
+    </button>
+
+    <button id="directoryBtn" class="switch-btn">
+         Student Directory
+    </button>
+</div>
+
+
+<!-- SETTINGS SECTION-->
+
+<section id="settingsSection" class="page-section">
+
+    <div class="settings-card">
+
+        <h2> Profile Information</h2>
+
+        <form>
+
+            <label>Full Name:</label>
+            <input type="text" value="John Doe">
+
+            <label>Student ID:</label>
+            <input type="text" value="ST12345">
+
+            <label>Email:</label>
+            <input type="email" value="john@gmail.com">
+
+            <label>Phone:</label>
+            <input type="tel" value="9876543210">
+
+            <button type="button" class="save-btn">
+                 Save Changes
+            </button>
+
+        </form>
+
+        <a href="Login.html" class="logout-btn">
+             Logout
+        </a>
+
+    </div>
+
+</section>
+
+
+<!--  STUDENT DIRECTORY SECTION-->
+
+<section id="directorySection" class="page-section hidden">
+
+    <h2 style="text-align:center;">
+         Student Directory
+    </h2>
+
+    <p class="section-description">
+       <center>View student records loaded dynamically from JSON.</center> 
+    </p>
+
+    <div class="filter-container">
+
+        <input
+            type="text"
+            id="studentSearch"
+            placeholder=" Search by name or ID..."
+        >
+
+        <select id="courseFilter">
+            <option value="All">All Courses</option>
+            <option value="WDF">WDF</option>
+            <option value="C++">C++</option>
+            <option value="DSA">DSA</option>
+        </select>
+
+        <select id="sortStudents">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="id-asc">ID (Ascending)</option>
+        </select>
+
+    </div>
+
+    <div id="studentLoading" class="loading-spinner">
+        Loading student records...
+    </div>
+
+    <div class="student-table-container">
+
+        <table id="studentTable">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTableBody">
+                <!-- Dynamically Rendered -->
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div
+        class="pagination"
+        id="studentPagination">
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
