@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us & FAQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-brand">StudentHub</div>
+    <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Assignment.html">Assignment</a></li>
+        <li><a href="Attendance.html">Attendance</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+    </ul>
+    <div class="nav-right">
+        <button id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">🌙</button>
+    </div>
+</nav>
+
+<h1>About Us</h1>
+
+
+        <h3> Welcome to the StudentHub Portal!</h3>
+        <p>
+        We are providing the services which are essential for the students <br>
+        like Attendance Record, Course Registration etc. 
+        </p>
+
+        <h2> Our Aim</h2>
+        <p> Our Aim is to provide a services wwhich are reliabe,simple <br>
+        and easy to use.</p>
+
+        <h2>Services</h2><br>
+
+        <ul>
+            <li>Attendance Record</li>
+            <li>Course Registration</li>
+            <li>Timetable</li> 
+        </ul>
+
+        <h2>Contact Us</h2>
+        <p>
+            Email: xyz@gmail.com<br>
+            Phone: 9863628735
+        </p>
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="filter-container">
+    <input type="text" id="faqSearch" placeholder="Search FAQs...">
+    <select id="faqCategoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Academic">Academic</option>
+        <option value="General">General</option>
+        <option value="Support">Support</option>
+        <option value="Events">Events</option>
+    </select>
+</div>
+
+<div id="faqLoading" class="loading-spinner">Loading FAQs...</div>
+<div class="faq" id="faqContainer">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

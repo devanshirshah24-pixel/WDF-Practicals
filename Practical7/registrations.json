@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Devanshi Shah",
+        "email": "25dce107@charusat.edu.in",
+        "mobile": "9876543210",
+        "course": "C++",
+        "year": "2",
+        "gender": "Female"
+    },
+    {
+        "name": "Devanshi Shah",
+        "email": "devanshi@gmail.com",
+        "mobile": "8976345673",
+        "course": "DSA",
+        "year": "3",
+        "gender": "Female"
+    },
+    {
+        "name": "Devanshi R Shah",
+        "email": "devanshi2@gmail.com",
+        "mobile": "6598763254",
+        "course": "WDF",
+        "year": "1",
+        "gender": "Male"
+    }
+]
