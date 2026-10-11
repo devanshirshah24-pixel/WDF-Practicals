@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-brand">StudentHub</div>
+
+    <button class="hamburger" id="hamburger">   
+        <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Assignment.html">Assignment</a></li>
+        <li><a href="Attendance.html">Attendance</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="Settings.html">Settings</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <a href="Login.html">Login</a>
+        <a href="Sign up.html">Sign Up</a>
+        <button id="themeToggle" class="theme-toggle" title="Toggle light/dark theme">🌙</button>
+    </div>
+</nav>
+
+<h1 align="center">Student Hub Portal</h1>
+
+<hr>
+
+<h2>Welcome to Student Hub Portal</h2>
+<p>Students can access Courses, Assignments, Attendance, Results and more.</p>
+
+<h2>Upcoming Events</h2>
+
+<div class="filter-container">
+    <input type="text" id="eventSearch" placeholder="Search events by keyword...">
+    <select id="eventCategoryFilter">
+        <option value="All">All Categories</option>
+        <option value="Workshop">Workshop</option>
+        <option value="Seminar">Seminar</option>
+        <option value="Competition">Competition</option>
+    </select>
+</div>
+
+<!-- Dynamic Slider populated from events.json -->
+<div id="eventsLoading" class="loading-spinner">Loading events...</div>
+<div class="slider" id="eventsSlider" style="display: none;">
+    <div id="slideContent"></div>
+    <button id="prevSlide" class="slide-btn">&#10094;</button>
+    <button id="nextSlide" class="slide-btn">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+             
